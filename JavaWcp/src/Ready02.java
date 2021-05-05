@@ -79,5 +79,36 @@ public class Ready02 {
 			default:
 				System.out.println("信号の色ではありません"); //どれにも当てはまらない時の処理(なくてもswitch文は成り立つ)
 		}
+		
+		//8章
+		int number = 1;
+        while (number < 5) {
+            int math = number * number;
+            System.out.println("While01 = " + math);
+            number++;
+        }
+        
+        int num = 1;
+        while (num < 5) {
+            System.out.println(num * num); // 上記と出力結果は同じ
+            num++;
+        }
+        
+        String[] array3 = {"リンゴ","ゴリラ","ラッパ","ぱなき"}; // Stringの配列array3を作成
+        for (String number2 : array3) {
+        	System.out.println("While02 = " + number2); // Stringの要素を一つずつ取り出して出力
+        }
+        
+        for (int i = 0; i < array3.length; i++) { // intと.lenghを用いて、array3の要素の数だけ一つずつ取り出して出力
+            System.out.println(array3[i]);
+        }
+        
+        int[] array4 = {0,1,2,3,4,5,6,7,8,9,10}; // intを用いて数字だけの配列arrray4を作成
+        for (int number3 : array4) { // array4の要素をarray3として取り出す
+        	if (number3%2==0) {  // arrray3のうち偶数はcontinueを用いて出力させない
+        		continue;
+        	}
+        	System.out.println(number3); // arrray4のうち奇数の要素のみ出力
+        }
 	}
 }
