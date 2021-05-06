@@ -1,4 +1,10 @@
 
+// パッケージ宣言(居場所)
+package ready02;
+
+// インポート文
+import classMethod.Ready02.myfunction;
+
 public class Ready02 {
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
@@ -110,5 +116,16 @@ public class Ready02 {
         	}
         	System.out.println(number3); // arrray4のうち奇数の要素のみ出力
         }
+        
+        myfunction yamada = new myfunction();  //Human02クラスのインスタンスを生成
+        System.out.println("名前は" + yamada.name + "で、年齢は" + yamada.age + "です。");
+
+        
+        System.out.println("私の名前は、" + yamada.name + "です。");
+        String profile = yamada.getProfile();
+        System.out.println(profile + "です。");
+
+        yamada.greet("田辺");
+        yamada.greet(null);
 	}
 }
