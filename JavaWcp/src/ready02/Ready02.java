@@ -118,14 +118,14 @@ public class Ready02 {
         }
         
         myfunction yamada = new myfunction();  //Human02クラスのインスタンスを生成
-        System.out.println("名前は" + yamada.name + "で、年齢は" + yamada.age + "です。");
+        System.out.println("名前は" + yamada.name + "で、年齢は" + yamada.age + "です。"); // 名前は山田で、年齢は20です。
 
         
-        System.out.println("私の名前は、" + yamada.name + "です。");
-        String profile = yamada.getProfile();
-        System.out.println(profile + "です。");
+        System.out.println("私の名前は、" + yamada.name + "です。"); // 私の名前は、山田です。
+        String profile = yamada.getProfile(); // myfunctionで定義したgetProfile()を持ってくる
+        System.out.println(profile + "です。"); // 私の名前は、山田です。年齢は20、職業はプログラマーです。
 
-        yamada.greet("田辺");
-        yamada.greet(null);
+        yamada.greet("田辺"); // 田辺さん、こんにちは！
+        yamada.greet(null); // 挨拶する友達がわかりません！
 	}
 }
