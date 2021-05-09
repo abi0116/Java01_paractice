@@ -3,7 +3,7 @@
 package ready02;
 
 // インポート文
-import classMethod.Ready02.myfunction;
+import classMethod.Ready02.myfunction; //プロゲートでは基本的にライブラリを読み込むためにimportを用いている
 
 public class Ready02 {
 	public static void main(String[] args) {
@@ -117,6 +117,7 @@ public class Ready02 {
         	System.out.println(number3); // arrray4のうち奇数の要素のみ出力
         }
         
+        
         myfunction yamada = new myfunction();  //Human02クラスのインスタンスを生成
         System.out.println("名前は" + yamada.name + "で、年齢は" + yamada.age + "です。"); // 名前は山田で、年齢は20です。
 
@@ -127,5 +128,6 @@ public class Ready02 {
 
         yamada.greet("田辺"); // 田辺さん、こんにちは！
         yamada.greet(null); // 挨拶する友達がわかりません！
+        //おそらく、greet(引数)で出力できるようにするのが形としてはキレイでわかりやすい
 	}
 }
