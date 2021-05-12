@@ -120,7 +120,7 @@ public class Ready02 {
         
         myfunction yamada = new myfunction();  //Human02クラスのインスタンスを生成
         System.out.println("名前は" + yamada.name + "で、年齢は" + yamada.age + "です。"); // 名前は山田で、年齢は20です。
-
+        //上記の記述はインスタンスフィールドを用いている
         
         System.out.println("私の名前は、" + yamada.name + "です。"); // 私の名前は、山田です。
         String profile = yamada.getProfile(); // myfunctionで定義したgetProfile()を持ってくる
@@ -128,6 +128,6 @@ public class Ready02 {
 
         yamada.greet("田辺"); // 田辺さん、こんにちは！
         yamada.greet(null); // 挨拶する友達がわかりません！
-        //おそらく、greet(引数)で出力できるようにするのが形としてはキレイでわかりやすい
+        
 	}
 }
