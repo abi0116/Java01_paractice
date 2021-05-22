@@ -2,6 +2,8 @@
 // パッケージ宣言(居場所)
 package ready02;
 
+import java.util.Scanner; //Scanner(ライブラリ)をインポート
+
 // インポート文
 import classMethod.Ready02.myfunction; //プロゲートでは基本的にライブラリを読み込むためにimportを用いている
 
@@ -129,5 +131,18 @@ public class Ready02 {
         yamada.greet("田辺"); // 田辺さん、こんにちは！
         yamada.greet(null); // 挨拶する友達がわかりません！
         
+        int max = Math.max(5,8); //Math(ライブラリ)を用いてint型の変数maxに5と8のうち、数が大きい物を代入
+        System.out.println("最大値は" + max + "です。"); //最大値を出力
+        
+        double meter = 5.61; //Math(ライブラリ)を用いてdouble型の変数meterに5.61を代入
+        System.out.println(Math.round(meter)); //meterの値(5.61)の少数点以下を四捨五入して出力
+        
+        Scanner scanner = new Scanner(System.in); //Scannerの初期化(Scannerライブラリ), 引数で標準入力System.inを指定する
+        System.out.print("あなたの名前を記入してください");
+        String name = scanner.next(); //文字列の入力を受け取る
+        System.out.println(name + "様、名前の入力が完了いたしました。");
+        
+     // Scannerクラスのインスタンスをクローズ
+        scanner.close();
 	}
 }
