@@ -165,29 +165,24 @@ public class Ready02 {
         	System.out.println(hand); //乱数で選ばれた手を出力
         }
         
-        System.out.println("じゃんけんの手を入力してください");
-        Scanner scann = new Scanner(System.in);
-        System.out.println("じゃんけんの手を入力してください");
-        String h = scann.next();
-        System.out.println("じゃんけんの手を入力してください");
-        Random ra = new Random();
-        System.out.println("じゃんけんの手を入力してください");
-        String hand = hands[ra.nextInt(3)];
-        System.out.println("npcが選択した手は"+hand+"です");
-        if(h == "グー" && hand == "パー") {
-        	System.out.println("あなたの負けです");
-        }else if(h == "チョキ" && hand == "グー") {
-        	System.out.println("あなたの負けです");
-        }else if(h == "パー" && hand == "チョキ") {
-        	System.out.println("あなたの負けです");
-        }else if(h == hand) {
-        	System.out.println("引き分けです");
-        }else {
-        	System.out.println("あなたの勝ちです");
-        }
+        //System.out.println("じゃんけんの手を入力してください");
+        //Scanner scann = new Scanner(System.in);
+        //String h = scann.next();
+        //Random ra = new Random();
+        //String hand = hands[ra.nextInt(3)];
+        //System.out.println("npcが選択した手は"+hand+"です");
+        //if(h == "グー" && hand == "パー") {
+        	//System.out.println("あなたの負けです");
+        //}else if(h == "チョキ" && hand == "グー") {
+        	//System.out.println("あなたの負けです");
+        //}else if(h == "パー" && hand == "チョキ") {
+        	//System.out.println("あなたの負けです");
+        //}else if(h == hand) {
+        	//System.out.println("引き分けです");
+        //}else {
+        	//System.out.println("あなたの勝ちです");
+        //}
      // Scannerクラスのインスタンスをクローズ
-        scann.close();
-        
-        
+        //scann.close();
 	}
 }
