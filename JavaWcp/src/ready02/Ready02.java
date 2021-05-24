@@ -153,7 +153,7 @@ public class Ready02 {
         
         Calendar cl = Calendar.getInstance();
         SimpleDateFormat today = new SimpleDateFormat("yyyy/MM/dd");
-        System.out.println(today.format(cl.getTime()));
-        System.out.println(today.format(date.getTime()));
+        System.out.println(today.format(cl.getTime())); //カレンダークラスを用いたときのSimpleDateFormaの書き方
+        System.out.println(today.format(date.getTime())); //Dateクラスを用いたときのSimpleDateFormaの書き方(上と同じ表示)
 	}
 }
