@@ -5,6 +5,7 @@ package ready02;
 import java.text.SimpleDateFormat; //Dateクラスのフォーマットを指定するクラス(ライブラリ)をインポート
 import java.util.Calendar; //カレンダークラス(ライブラリ)をインポート
 import java.util.Date; //Dateクラス(ライブラリ)をインポート
+import java.util.Random; //Randomクラス(ライブラリ)をインポート
 import java.util.Scanner; //Scannerクラス(ライブラリ)をインポート
 
 // インポート文
@@ -155,5 +156,38 @@ public class Ready02 {
         SimpleDateFormat today = new SimpleDateFormat("yyyy/MM/dd");
         System.out.println(today.format(cl.getTime())); //カレンダークラスを用いたときのSimpleDateFormaの書き方
         System.out.println(today.format(date.getTime())); //Dateクラスを用いたときのSimpleDateFormaの書き方(上と同じ表示)
+         
+        //Randomクラスを用いたじゃんけんの手をランダムに出すプログラム
+        String[] hands = {"グー","チョキ","パー"}; //文字列の配列handsを作成
+        Random r  = new Random(); //Randomクラスのインスタンスを作成(rでRandomクラスを利用できるようにしている)
+        for(int i=0 ; i<5 ; i++) { //5回繰り返しのfor文
+        	String hand = hands[r.nextInt(3)]; //nextIntメソッドで0以上3未満の乱数を生成(Scannerの時との動き方の違いに注意)
+        	System.out.println(hand); //乱数で選ばれた手を出力
+        }
+        
+        System.out.println("じゃんけんの手を入力してください");
+        Scanner scann = new Scanner(System.in);
+        System.out.println("じゃんけんの手を入力してください");
+        String h = scann.next();
+        System.out.println("じゃんけんの手を入力してください");
+        Random ra = new Random();
+        System.out.println("じゃんけんの手を入力してください");
+        String hand = hands[ra.nextInt(3)];
+        System.out.println("npcが選択した手は"+hand+"です");
+        if(h == "グー" && hand == "パー") {
+        	System.out.println("あなたの負けです");
+        }else if(h == "チョキ" && hand == "グー") {
+        	System.out.println("あなたの負けです");
+        }else if(h == "パー" && hand == "チョキ") {
+        	System.out.println("あなたの負けです");
+        }else if(h == hand) {
+        	System.out.println("引き分けです");
+        }else {
+        	System.out.println("あなたの勝ちです");
+        }
+     // Scannerクラスのインスタンスをクローズ
+        scann.close();
+        
+        
 	}
 }
