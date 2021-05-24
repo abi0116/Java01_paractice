@@ -2,7 +2,10 @@
 // パッケージ宣言(居場所)
 package ready02;
 
-import java.util.Scanner; //Scanner(ライブラリ)をインポート
+import java.text.SimpleDateFormat; //Dateクラスのフォーマットを指定するクラス(ライブラリ)をインポート
+import java.util.Calendar; //カレンダークラス(ライブラリ)をインポート
+import java.util.Date; //Dateクラス(ライブラリ)をインポート
+import java.util.Scanner; //Scannerクラス(ライブラリ)をインポート
 
 // インポート文
 import classMethod.Ready02.myfunction; //プロゲートでは基本的にライブラリを読み込むためにimportを用いている
@@ -144,5 +147,13 @@ public class Ready02 {
         
      // Scannerクラスのインスタンスをクローズ
         scanner.close();
+        
+        Date date = new Date(); //newを用いてインスタンスを作成したときに、今日の日付が入る
+        System.out.println("今日の日付は"+ date.toString() + "です");
+        
+        Calendar cl = Calendar.getInstance();
+        SimpleDateFormat today = new SimpleDateFormat("yyyy/MM/dd");
+        System.out.println(today.format(cl.getTime()));
+        System.out.println(today.format(date.getTime()));
 	}
 }
