@@ -3,7 +3,9 @@
 package ready02;
 
 import java.text.SimpleDateFormat; //Dateクラスのフォーマットを指定するクラス(ライブラリ)をインポート
+import java.util.ArrayList; //配列を作るライブラリをインポート
 import java.util.Calendar; //カレンダークラス(ライブラリ)をインポート
+import java.util.Collections; //配列をソート(並べ替え)するライブラリをインポート
 import java.util.Date; //Dateクラス(ライブラリ)をインポート
 import java.util.Random; //Randomクラス(ライブラリ)をインポート
 import java.util.Scanner; //Scannerクラス(ライブラリ)をインポート
@@ -184,5 +186,21 @@ public class Ready02 {
         //}
      // Scannerクラスのインスタンスをクローズ
         //scann.close();
+        
+        ArrayList<String> stateList = new ArrayList<String>(); //ArrayList(ライブラリ)を用いて,空の配列stateListを作成
+		stateList.add("TX"); //配列stateListに要素を追加
+		stateList.add("WA");
+		stateList.add("CA");
+
+		for(int i=0;i<stateList.size();i++){ //要素の数だけ取り出して表示
+			System.out.println(stateList.get(i));
+		}
+
+		Collections.sort(stateList); //要素をCollectionsライブラを用いてアルファベット順に並べ替え(ソート)
+		System.out.println("--- Sorted ---");
+
+		for(int i=0;i<stateList.size();i++){ //上で並び変えたので、最初と同じ取り出し方で、ソート後の順で要素が表示される
+			System.out.println(stateList.get(i));
+		}
 	}
 }
