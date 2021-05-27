@@ -201,6 +201,11 @@ public class Ready02 {
 
 		for(int i=0;i<stateList.size();i++){ //上で並び変えたので、最初と同じ取り出し方で、ソート後の順で要素が表示される
 			System.out.println(stateList.get(i));
+			
+		}
+		System.out.println("--- Sorted 拡張for文 ---");
+		for(String stList: stateList) { //上記の文を拡張for文で表示
+			System.out.println(stList);
 		}
 	}
 }
