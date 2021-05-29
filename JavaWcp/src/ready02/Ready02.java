@@ -167,9 +167,10 @@ public class Ready02 {
         	System.out.println(hand); //乱数で選ばれた手を出力
         }
         
+        //Scanner scanner = new Scanner(System.in);
         //System.out.println("じゃんけんの手を入力してください");
-        //Scanner scann = new Scanner(System.in);
-        //String h = scann.next();
+        //String h = scanner.next();
+        //System.out.println("あなたが選択した手は"+ h +"です");
         //Random ra = new Random();
         //String hand = hands[ra.nextInt(3)];
         //System.out.println("npcが選択した手は"+hand+"です");
@@ -185,7 +186,7 @@ public class Ready02 {
         	//System.out.println("あなたの勝ちです");
         //}
      // Scannerクラスのインスタンスをクローズ
-        //scann.close();
+        //scanner.close();
         
         ArrayList<String> stateList = new ArrayList<String>(); //ArrayList(ライブラリ)を用いて,空の配列stateListを作成
 		stateList.add("TX"); //配列stateListに要素を追加
