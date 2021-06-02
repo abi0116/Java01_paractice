@@ -45,14 +45,14 @@ public class Controller implements Initializable {
     @FXML
     public void onClick(ActionEvent event) {
         // テキストボックスに文字列をセットする
-        textBox.setText("ボタンを押しました。");
+        textBox.setText("ボタンを押しました。"); //JSの時と同じように発火のタイミングと、アクションを設定
     }
 
     /** ************************************************************
      * ツールタイプ選択ドロップダウンを取得します。
      * @return ツールタイプ選択ドロップダウン
      * *************************************************************/
-    public ChoiceBox<String> getToolType() {
+    public ChoiceBox<String> getToolType() { //ChoiseBoxのStringバージョンとしてgetToolTypeを取得
         return dropDown;
     }
 
@@ -60,7 +60,7 @@ public class Controller implements Initializable {
      * ツールタイプ選択ドロップダウンを設定します。
      * @param toolType ツールタイプ選択ドロップダウン
      * ************************************************************/
-    public void setToolType(ChoiceBox<String> toolType) {
+    public void setToolType(ChoiceBox<String> toolType) { //上記のは取得、こっちは設定
         this.dropDown = toolType;
     }
 
@@ -76,7 +76,7 @@ public class Controller implements Initializable {
      * 入力ファイル名テキストフィールドを設定します。
      * @param inputFile 入力ファイル名テキストフィールド
      * ************************************************************/
-    public void setInputFile(TextField textBox) {
+    public void setInputFile(TextField textBox) { //上記のは取得、こっちは設定
         this.textBox = textBox;
     }
 
@@ -92,7 +92,7 @@ public class Controller implements Initializable {
      * 参照ボタンを設定します。
      * @param reference 参照ボタン
      * ************************************************************/
-    public void setReference(Button button) {
+    public void setReference(Button button) { //上記のは取得、こっちは設定
         this.button = button;
     }
 }
