@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -8,7 +9,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox prefHeight="60.0" prefWidth="400.0">
+      <HBox prefHeight="64.0" prefWidth="400.0">
          <children>
             <Label fx:id="dropword" text="選択してください">
                <HBox.margin>
@@ -44,5 +45,10 @@
             <Insets left="300.0" />
          </VBox.margin>
       </Button>
+      <ColorPicker />
+      <CheckBox mnemonicParsing="false" text="CheckBox" />
+      <ScrollBar />
+      <RadioButton mnemonicParsing="false" text="RadioButton" />
+      <RadioButton mnemonicParsing="false" text="RadioButton" />
    </children>
 </VBox>

@@ -14,15 +14,15 @@ public class myfunction {
     
   //String型の戻り値を返す引数なしのメソッドを定義
     public String getProfile() {
-        return "年齢は" + this.age + "、職業は" + this.profession;
+        return "年齢は" + this.age + "、職業は" + this.profession; //System.out.printlnで出力するのであれば、voidにしたうえでSystem.outを行う
     }
 
-    //戻り値を返さない、String型の引数を1つとるメソッドを定義
+    //戻り値を返さない(void)、String型の引数を1つとるメソッドを定義
     public void greet(String friend) {
-        if (friend == null) { //String型の値はnullの可能性があるのでチェック
+        if (friend == null) { //String型の値はnullの可能性があるのでチェック(Stringの初期値はnull)
             System.out.println("挨拶する友達がわかりません！");
-            return;
+            return; //ここのreturnで処理を終われせている
         }
-        System.out.println(friend + "さん、こんにちは！");
+        System.out.println(friend + "さん、こんにちは！"); //if文が通ればreturnで個々の処理は行われない
     }
 }

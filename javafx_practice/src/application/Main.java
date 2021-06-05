@@ -20,8 +20,8 @@ public class Main extends Application {
             // シーン生成
             Scene scene = new Scene(root);
 
-			//BorderPane root = new BorderPane();
-			//Scene scene = new Scene(root,400,400);
+			//BorderPane root = new BorderPane(); 変数rootは上記で作っている(読み込んでいるので新しくインスタンスを作る必要はない)
+			//Scene scene = new Scene(root,400,400);　400,400はFXMLで設定しているので必要ない
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
@@ -30,7 +30,7 @@ public class Main extends Application {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) { //わかりにくいけど、ここにmainクラスが置いてある。
 		launch(args);
 	}
 }
